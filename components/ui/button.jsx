@@ -20,11 +20,21 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+<<<<<<< HEAD
+=======
+        primary: "backdrop-blur-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white border-transparent hover:shadow-2xl hover:shadow-blue-500/25 hover:transform hover:scale-105",
+        glass: "backdrop-blur-lg bg-white/10 text-white border-white/20 hover:transform hover:scale-105",
+
+>>>>>>> a953cef4ceed79b2e6dcec49d6d9999c1d5af249
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+<<<<<<< HEAD
+=======
+        xl: "h-12 px-6 text-base rounded-xl",
+>>>>>>> a953cef4ceed79b2e6dcec49d6d9999c1d5af249
         icon: "size-9",
       },
     },
