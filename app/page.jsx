@@ -1,3 +1,4 @@
+import Features from '@/components/features';
 import HeroSection from '@/components/hero';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -38,6 +39,10 @@ const Page = () => {
       </section>
 
       {/* feature */}
+              
+<Features/>
+
+
       {/* Pricing */}
       <section className="py-20 text-center">
         <div className="max-w-4xl mx-auto px-6">
