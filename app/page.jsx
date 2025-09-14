@@ -1,5 +1,6 @@
 import Features from '@/components/features';
 import HeroSection from '@/components/hero';
+import Pricing from '@/components/pricing';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import React from 'react';
@@ -44,6 +45,11 @@ const Page = () => {
 
 
       {/* Pricing */}
+<Pricing/>
+
+
+
+
       <section className="py-20 text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-5xl font-bold mb-6">
