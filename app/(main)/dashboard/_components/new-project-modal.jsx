@@ -17,8 +17,7 @@ const handelClose = () => {
 
   return (
     <>
-    <Dialog isOpen={isOpen} onOpenChange = {handelClose}>
-  <DialogTrigger>Open</DialogTrigger>
+    <Dialog open={isOpen} onOpenChange = {handelClose}>
   <DialogContent>
     <DialogHeader>
       <DialogTitle>Are you absolutely sure?</DialogTitle>
@@ -28,13 +27,11 @@ const handelClose = () => {
       </DialogDescription>
     </DialogHeader>
 
-    <DialogFooter>
-        Footer
-    </DialogFooter>
+    <DialogFooter>Footer</DialogFooter>
   </DialogContent>
 </Dialog>
     </>
   )
-}
+};
 
-export default NewProjectModal
+export default NewProjectModal;
