@@ -25,7 +25,7 @@ export const create  = mutation({
       }
     }
 
-    await ctx.db.insert("Projects" , {
+    const projectId = await ctx.db.insert("Projects" , {
       title: args.title,
       userId: user.id,
       originalImageUrl: args.originalImageUrl,
