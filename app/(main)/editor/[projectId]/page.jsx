@@ -1,5 +1,6 @@
-"use client";
+// "use client";
 import { useParams } from 'next/navigation';
+// import { useParams } from "react-router";
 import React from 'react'
 
 const Editor = async() => {
@@ -8,4 +9,4 @@ const Editor = async() => {
   return <div>Editor: {projectid}</div>
 };
 
-export default Editor;
+export default Editor;``

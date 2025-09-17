@@ -6,11 +6,13 @@ import { useConvexQuery } from "@/hooks/use-convex-query";
 import { Plus, Sparkle } from "lucide-react";
 import React, { useState } from "react";
 import { BarLoader } from "react-spinners";
-import NewProjectModal from "./_components/new-project-modal";
 
 const Dashboard = () => {
-  const { data: projects, isLoading } = useConvexQuery(api.projects.getUserProjects);
-  const [showNewProjectModal, setShowNewProjectModal] = useState(false); // Define state
+  const [showNewProjectModal, setShowNewProjectModal] = useState(false);
+
+  const { data: projects, isLoading } = useConvexQuery(
+    api.projects.getUserProjects
+  );
 
   console.log(projects);
 
@@ -19,7 +21,9 @@ const Dashboard = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="text-4xl font-bold text-white mb-2">Your Projects</h1>
+            <h1 className="text-4xl font-bold text-white mb-2">
+              Your Projects
+            </h1>
             <p className="text-white/70">
               Create and manage your AI-powered image designs
             </p>
@@ -34,7 +38,11 @@ const Dashboard = () => {
             <Plus className="h-5 w-5" />
             New Project
           </Button>
+
+          
+
         </div>
+
 
         {isLoading ? (
           <BarLoader width={"100%"} color="White" />
@@ -48,7 +56,6 @@ const Dashboard = () => {
             <p className="text-white/70 mb-8 max-w-md">
               Upload an image to start editing with our powerful AI tools
             </p>
-
             <Button
               onClick={() => setShowNewProjectModal(true)}
               variant="primary"
@@ -60,11 +67,6 @@ const Dashboard = () => {
             </Button>
           </div>
         )}
-
-        <NewProjectModal
-          isOpen={showNewProjectModal} // Use lowercase showNewProjectModal
-          onClose={() => setShowNewProjectModal(false)}
-        />
       </div>
     </div>
   );
