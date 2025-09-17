@@ -68,7 +68,6 @@ export default defineSchema({
   }).index("by_user", ["userId"]), // User's folders
 });
 
-
 /* 
 PLAN LIMITS EXAMPLE:
 - Free: 3 projects, 20 exports/month, basic features only
